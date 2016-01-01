@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="Forest">#009900</color>
+
+    <style name="ForestTheme" parent= "android:Theme.Translucent">
+        <item name="android:windowBackground">@color/Forest</item>
+    </style>
+
+</resources>

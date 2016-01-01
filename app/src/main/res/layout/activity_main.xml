@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/SaveBtn"
+        style="@style/BlueyCharlie.Biggy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:onClick="SaveInfo"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        style="@style/BlueyCharlie.Biggy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Info"
+        android:id="@+id/DisplayBtn"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:onClick="DisplayInfo"
+        android:layout_alignTop="@+id/SaveBtn"
+        android:layout_toRightOf="@+id/SaveBtn"
+        android:layout_toEndOf="@+id/SaveBtn" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Cool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/UsernameInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Cool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="32dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Cool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="32dp"
+        android:text="Born Date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Cool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UsernameInput"
+        android:width="100dp"
+        android:layout_toRightOf="@+id/SaveBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PasswordInput"
+        android:width="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/UsernameInput"
+        android:layout_alignStart="@+id/UsernameInput"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BornInput"
+        android:width="100dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/SaveBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressInput"
+        android:width="100dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/SaveBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/UserStatus"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/SaveBtn"
+        android:layout_alignRight="@+id/SaveBtn"
+        android:layout_alignEnd="@+id/SaveBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/BornStatus"
+        android:layout_alignTop="@+id/AddressStatus"
+        android:layout_alignLeft="@+id/PassStatus"
+        android:layout_alignStart="@+id/PassStatus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/PassStatus"
+        android:layout_above="@+id/AddressStatus"
+        android:layout_toEndOf="@+id/AddressInput"
+        android:layout_alignLeft="@+id/DisplayBtn"
+        android:layout_alignStart="@+id/DisplayBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/AddressStatus"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/UserStatus"
+        android:layout_toLeftOf="@+id/DisplayBtn"
+        android:layout_toStartOf="@+id/DisplayBtn" />
+
+
+</RelativeLayout>

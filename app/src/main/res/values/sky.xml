@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="BlueyCharlie">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:colorBackground">#006699</item>
+        <item name="android:textColor">#000011</item>
+    </style>
+
+    <style name="BlueyCharlie.Biggy">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Cool">
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:colorBackground">#f4e5f4</item>
+        <item name="android:textColor">#1e001e</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
